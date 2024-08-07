@@ -14,7 +14,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 <code>
 <?php
    $con= mysqli_connect('localhost','root');
-
    if($con){
        echo "Connection Successful";
    }
@@ -32,7 +31,18 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
    mysqli_query($con,$query);
    header('location:index.php');
-
-
 ?>
+</code>
+
+<h2>Function for sum of array</h2>
+<code>
+function sumofarr($marksArr){
+    $sum=0;
+    foreach($variable as $value){
+        $sum+= $value;
+    }
+    return $sum;
+}
+$me = [34,56,67,87];
+$sumofmark= sumofarr($me);
 </code>
