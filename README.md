@@ -48,3 +48,11 @@ $sql = "CREATE DATABASE mydbase";
 mysqli_query($conn, $sqli);
 ?>
 </code>
+
+<h2>Create a Database</h2>
+<code>
+<?php
+$sql = "CREATE DATABASE mydbase";
+mysqli_query($conn, $sqli);
+?>
+</code>
