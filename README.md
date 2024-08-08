@@ -7,31 +7,13 @@ $username = "root";
 $password = "";
 $dbname = "crud_example";
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-</code>
-
-<h2>Connect to database:</h2>
-<code>
-<?php
-   $con= mysqli_connect('localhost','root');
-   if($con){
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if($conn){
        echo "Connection Successful";
    }
    else{
        echo "Connection Failed";
    }
-
-   mysqli_select_db($con,'photography');
-
-   $name= $_POST['name'];
-   $emai= $_POST['email'];
-   $number= $_POST['number'];
-
-   $query= "INSERT INTO users(name,email,number) VALUES('$name','$emai','$number')";
-
-   mysqli_query($con,$query);
-   header('location:index.php');
-?>
 </code>
 
 <h2>Function for sum of array</h2>
@@ -45,4 +27,24 @@ function sumofarr($marksArr){
 }
 $me = [34,56,67,87];
 $sumofmark= sumofarr($me);
+</code>
+
+<h2>Globaland Local Variabl</h2>
+<code>
+<?php
+$a = 98; // Global Variabl
+
+function printValue(){
+    $a = 97; // Local Variable
+    
+}
+?>
+</code>
+
+<h2>Create a Database</h2>
+<code>
+<?php
+$sql = "CREATE DATABASE mydbase";
+mysqli_query($conn, $sqli);
+?>
 </code>
