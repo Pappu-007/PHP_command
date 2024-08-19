@@ -81,3 +81,12 @@ if($num> 0){
     } 
 }
 </code>
+<h2>Read any file</h2>
+<code>
+$a = readfile("myfile.txt");
+echo $a;
+
+readfile("myfile.txt");
+readfile("1.png");
+readfile("file.html");
+</code>
