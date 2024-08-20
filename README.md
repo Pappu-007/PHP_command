@@ -90,3 +90,7 @@ readfile("myfile.txt");
 readfile("1.png");
 readfile("file.html");
 </code>
+<h2>Password Hashing</h2>
+<code>
+$hash = password_hash($password, PASSWORD_DEFAULT);
+</code>
